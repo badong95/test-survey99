@@ -8,25 +8,18 @@
 <body>
   <div class="container">
     <h1>설문지 테스트</h1>
-    <form id="surveyForm">
-      <label>1. 당신의 나이는?</label><br>
-      <input type="number" name="age" required><br><br>
+   <form id="surveyForm">
+  <label for="name">이름:</label>
+  <input type="text" id="name" required />
 
-      <label>2. 자주 사용하는 기기는?</label><br>
-      <select name="device" required>
-        <option value="">선택하세요</option>
-        <option value="phone">스마트폰</option>
-        <option value="tablet">태블릿</option>
-        <option value="pc">컴퓨터</option>
-      </select><br><br>
+  <label for="age">나이:</label>
+  <input type="number" id="age" required />
 
-      <label>3. 어떤 기능이 있으면 좋겠어요? (복수 선택 가능)</label><br>
-      <input type="checkbox" name="feature" value="design"> 예쁜 디자인<br>
-      <input type="checkbox" name="feature" value="speed"> 빠른 속도<br>
-      <input type="checkbox" name="feature" value="mobile"> 모바일 최적화<br><br>
+  <label for="feedback">의견:</label>
+  <textarea id="feedback"></textarea>
 
-      <button type="submit">제출</button>
-    </form>
+  <button type="submit">제출하기</button>
+</form>
   </div>
 <script type="module" src="script.js"></script>
 </body>
